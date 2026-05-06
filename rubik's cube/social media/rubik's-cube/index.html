@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubik Mosaic Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Rubik’s Cube Mosaic Generator</h1>
+
+<input type="file" id="imageInput" accept="image/*">
+<br><br>
+
+<label>Mosaic Width (cubes):</label>
+<input type="number" id="mosaicWidth" value="60" min="10" max="200">
+<br><br>
+
+<select id="difficulty">
+    <option value="easy">Easy (5 moves)</option>
+    <option value="medium">Medium (12 moves)</option>
+    <option value="hard">Hard (20 moves)</option>
+    <option value="spectacular">Spectacular (60 moves)</option>
+</select>
+
+<button id="generateBtn">Generate Mosaic</button>
+
+<h2>Preview</h2>
+<canvas id="previewCanvas"></canvas>
+
+<h2>Final Mosaic Image</h2>
+<canvas id="mosaicCanvas"></canvas>
+
+<h2>Cube Placement + Scrambles</h2>
+<pre id="scrambleOutput"></pre>
+
+<script src="app.js"></script>
+</body>
+</html>

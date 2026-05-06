@@ -1,0 +1,32 @@
+body {
+  background: #333;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+}
+
+.box {
+  background: #444;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  background: #ff4444;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff2222;
+}
